@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|El+Messiri|Tajawal" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+}
+.container{
+    margin:100px 400px;
+    padding: 10px 10px;
+    box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Tajawal', sans-serif;
+    }
+.h2{
+    margin:10px;
+    font-size: 50px;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  text-align: right;
+  padding: 10px 40px;
+ 
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #6535bc;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 15px;
+  right: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: auto;
+  left:0;
+  top: 0;
+  padding: 10px 10px 10px 10px;
+  text-align: right; 
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #6535bc;
+  padding: 5px 10px;
+  color: white;
+  text-align: center;
+  border-bottom: solid #3a80dd;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 3.5px;
+  width: 25%;
+  background:  #6535bc;
+  float: left;
+  text-align: center;
+  font-size: 23px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+  color: #6535bc;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Tajawal', sans-serif;
+    color: #6535bc;
+    text-align: right;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-family: 'Tajawal', sans-serif;
+    color: #6535bc;
+    text-align: right;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    font-family: 'Tajawal', sans-serif;
+    color: #6535bc;
+    text-align: right; 
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-family: 'Tajawal', sans-serif;
+    color: #6535bc;    
+    text-align: right;
+}
+p{
+  color: #6535bc;
+  display: inline;
+  font-weight: bold;
+}
+h4{
+    text-align:right; 
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div id="myDIV" class="header">
+  <h2 class="h2">خطوات بناء المشروع</h2>
+</div>
+
+<ul id="myUL">
+  <li> الحصول على موافقة المشروع بعد تقديم نموذج الطلب من &nbsp;<p>لجنة المشاريع</p></li>
+  <li>التواصل مع الضيف من &nbsp;<p>لجنة العلاقات العامة او عادي انت تقدر تسويها</p></li>
+  <li>بدء الفعالية في تطبيق النادي للحصول على منظمين او مشاركين للفعالية &nbsp;<p>انت</p></li>
+  <li>طلب تصميم رول اب &nbsp;<p>لجنة الاعلام</p></li>
+  <li>طلب توفير التغذية وتصريح دخول الضيف وبث المحاضرة للطالبات &nbsp;<p>لجنة الدعم</p></li>
+  <li>طلب نشر المشروع على تويتر وايميلات الطلاب والطالبات &nbsp;<p>لجنة الاعلام</p></li>
+  <li>التواجد قبل المشروع بساعة &nbsp;<p>انت</p></li>
+  <li>توزيع الرول اب في الكلية &nbsp;<p>انت ومن معك من الاشاوس</p></li>
+  <li>تنظيم وادارة المشروع &nbsp;<p>انت ومن معك من الاشاوس</p></li>
+  <li>اعطاء لجنة المشاريع تقرير بالمشروع &nbsp;<p>انت</p></li>
+  <li>اعطاء لجنة الجودة تقرير بالمشروع &nbsp;<p>انت</p></li>
+  <li>تعبئة ما قام بة المنظمون في تطبيق النادي &nbsp;<p>انت</p></li>
+  <li>تعبئة نموذج المشاريع &nbsp;<p>انت</p></li>
+  <li><p>تمت يا اسطورة</p></li>
+</ul>
+<h4> <p>ملاحظة:</p>&nbsp;اذا ما لقيت احد من الاشاوس يتطوع معك وهذا نادر الحدوث كلم لجنة الازضاء</h4>
+<h4> <p>ملاحظة:</p>&nbsp;تنفيذ الخطوات بالترتيب مهم جدًا و ياليت تسلم التقرير لانه مهم جدًا</h4>
+<h4> <p>ملاحظة:</p>&nbsp;اشوس :جَرِيءٌ ، شُجاعٌ شَديدُ المِراسِ في القِتالِ</h4>
+</div>
+
+
+
+</body>
+</html>
